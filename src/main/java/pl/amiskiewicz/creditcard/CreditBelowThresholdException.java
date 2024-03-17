@@ -1,2 +1,4 @@
-package pl.amiskiewicz.creditcard;public class CreditBelowThresholdException {
+package pl.amiskiewicz.creditcard;
+
+public class CreditBelowThresholdException extends IllegalStateException {
 }
