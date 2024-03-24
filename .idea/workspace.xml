@@ -5,16 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e8b1273e-2907-4dd9-b109-b12261983fd6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/amiskiewicz/creditcard/CreditCantBeReassignedException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/amiskiewicz/creditcard/TransactionDenyException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/amiskiewicz/creditcard/CreditBelowThresholdException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/amiskiewicz/creditcard/CreditBelowThresholdException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/amiskiewicz/creditcard/CreditCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/amiskiewicz/creditcard/CreditCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/amiskiewicz/creditcard/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/amiskiewicz/creditcard/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pl/amiskiewicz/creditcard/CreditCardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/amiskiewicz/creditcard/CreditCardTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pl/amiskiewicz/creditcard/HelloTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/amiskiewicz/creditcard/HelloTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +25,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
@@ -56,6 +51,7 @@
     "JUnit.CreditCardTest.itCantReassignCreditLimit.executor": "Run",
     "JUnit.CreditCardTest.itDenyTransactionsOverTheBalance.executor": "Run",
     "JUnit.HelloTest.executor": "Run",
+    "JUnit.ProductCatalogTest.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -69,16 +65,17 @@
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "/Users/amanda/Desktop/CreditCard/src/main/java/pl/amiskiewicz/creditcard/Main.java",
     "settings.build.tools.auto.reload": "ALL",
-    "settings.editor.selected.configurable": "build.tools",
+    "settings.editor.selected.configurable": "editor.preferences.import",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="pl.amiskiewicz.ecommerce.catalog" />
       <recent name="pl.amiskiewicz.creditcard" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CreditCardTest">
+  <component name="RunManager" selected="JUnit.ProductCatalogTest">
     <configuration name="CreditCardTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CreditCard" />
       <extension name="coverage">
@@ -90,22 +87,6 @@
       <option name="PACKAGE_NAME" value="pl.amiskiewicz.creditcard" />
       <option name="MAIN_CLASS_NAME" value="pl.amiskiewicz.creditcard.CreditCardTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CreditCardTest.cantReassignCreditLimits" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CreditCard" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.amiskiewicz.creditcard.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pl.amiskiewicz.creditcard" />
-      <option name="MAIN_CLASS_NAME" value="pl.amiskiewicz.creditcard.CreditCardTest" />
-      <option name="METHOD_NAME" value="cantReassignCreditLimits" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -158,13 +139,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ProductCatalogTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CreditCard" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.amiskiewicz.ecommerce.catalog.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.amiskiewicz.ecommerce.catalog" />
+      <option name="MAIN_CLASS_NAME" value="pl.amiskiewicz.ecommerce.catalog.ProductCatalogTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ProductCatalogTest" />
         <item itemvalue="JUnit.CreditCardTest" />
         <item itemvalue="JUnit.CreditCardTest.isAllowsAssignCreditCardLimit" />
         <item itemvalue="JUnit.CreditCardTest.itDenyTransactionsOverTheBalance" />
         <item itemvalue="JUnit.CreditCardTest.itAllowsWithdrawMoney" />
-        <item itemvalue="JUnit.CreditCardTest.cantReassignCreditLimits" />
       </list>
     </recent_temporary>
   </component>
@@ -185,7 +181,8 @@
       <updated>1709552725866</updated>
       <workItem from="1709552726934" duration="2912000" />
       <workItem from="1709570782777" duration="21000" />
-      <workItem from="1710140623185" duration="5623000" />
+      <workItem from="1710140623185" duration="5788000" />
+      <workItem from="1710745580474" duration="5973000" />
     </task>
     <servers />
   </component>
