@@ -1,5 +1,7 @@
 package pl.amiskiewicz.ecommerce.catalog;
 
+import pl.amiskiewicz.ecommerce.catalog.Product;
+
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Collections;

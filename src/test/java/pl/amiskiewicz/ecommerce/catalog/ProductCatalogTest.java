@@ -1,6 +1,10 @@
 package pl.amiskiewicz.ecommerce.catalog;
 
+import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
+import pl.amiskiewicz.ecommerce.catalog.Product;
+import pl.amiskiewicz.ecommerce.catalog.ProductCatalog;
+
 import static org.assertj.core.api.Assertions.*;
 
 import java.math.BigDecimal;
@@ -21,7 +25,7 @@ public class ProductCatalogTest {
         ProductCatalog catalog = thereIsProductCatalog();
         catalog.addProduct("Legoset 8083", "nice one");
         List<Product> allProducts = catalog.allProducts();
-        assertThat(allProducts).hasSize(1);
+        Assertions.assertThat(allProducts).hasSize(1);
     }
 
     @Test

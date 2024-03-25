@@ -9,6 +9,18 @@ public class Product {
     private final String description;
     private BigDecimal price;
 
+    public String getDescription() {
+        return description;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setPrice(BigDecimal price) {
+        this.price = price;
+    }
+
     public Product(UUID id, String name, String description) {
         this.id = id.toString();
         this.name = name;

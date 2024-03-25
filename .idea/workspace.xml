@@ -5,7 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e8b1273e-2907-4dd9-b109-b12261983fd6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/amiskiewicz/ecommerce/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/amiskiewicz/ecommerce/catalog/ProductCatalogController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/amiskiewicz/ecommerce/hello/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pl/amiskiewicz/ecommerce/AppTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/amiskiewicz/ecommerce/catalog/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/amiskiewicz/ecommerce/catalog/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/amiskiewicz/ecommerce/catalog/ProductCatalog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/amiskiewicz/ecommerce/catalog/ProductCatalog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/amiskiewicz/ecommerce/catalog/ProductCatalogTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/amiskiewicz/ecommerce/catalog/ProductCatalogTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +26,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="Class" />
       </list>
     </option>
@@ -37,49 +49,100 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CreditCardTest.cantReassignCreditLimits.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CreditCardTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CreditCardTest.isAllowsAssignCreditCardLimit.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CreditCardTest.isDenyCreditCardLimitBelowThresholdV2.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CreditCardTest.isDenyCreditLimitBelowThreshold.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CreditCardTest.isDenyCreditLimitBelowThresholdV2.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CreditCardTest.itAllowsWithdrawMoney.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CreditCardTest.itCantReassignCreditLimit.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CreditCardTest.itDenyTransactionsOverTheBalance.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.HelloTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ProductCatalogTest.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/amanda/Desktop/CreditCard&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/amanda/Desktop/CreditCard/src/main/java/pl/amiskiewicz/creditcard/Main.java&quot;,
-    &quot;settings.build.tools.auto.reload&quot;: &quot;ALL&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.import&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JUnit.AppTest.contextLoads.executor": "Run",
+    "JUnit.AppTest.executor": "Run",
+    "JUnit.CreditCardTest.cantReassignCreditLimits.executor": "Run",
+    "JUnit.CreditCardTest.executor": "Run",
+    "JUnit.CreditCardTest.isAllowsAssignCreditCardLimit.executor": "Run",
+    "JUnit.CreditCardTest.isDenyCreditCardLimitBelowThresholdV2.executor": "Run",
+    "JUnit.CreditCardTest.isDenyCreditLimitBelowThreshold.executor": "Run",
+    "JUnit.CreditCardTest.isDenyCreditLimitBelowThresholdV2.executor": "Run",
+    "JUnit.CreditCardTest.itAllowsWithdrawMoney.executor": "Run",
+    "JUnit.CreditCardTest.itCantReassignCreditLimit.executor": "Run",
+    "JUnit.CreditCardTest.itDenyTransactionsOverTheBalance.executor": "Run",
+    "JUnit.HelloTest.executor": "Run",
+    "JUnit.ProductCatalogTest.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.App.executor": "Run",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/amanda/Desktop/CreditCard",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "/Users/amanda/Desktop/CreditCard/src/main/java/pl/amiskiewicz/creditcard/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.build.tools.auto.reload": "ALL",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="pl.amiskiewicz.ecommerce.catalog" />
       <recent name="pl.amiskiewicz.creditcard" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/static" />
+      <recent name="$PROJECT_DIR$/src/main/resources/static/js" />
+      <recent name="$PROJECT_DIR$/src/main/resources/static/css" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="pl.amiskiewicz.ecommerce.catalog" />
+      <recent name="pl.amiskiewicz.creditcard" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.ProductCatalogTest">
+  <component name="RunManager" selected="Spring Boot.App">
+    <configuration name="AppTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CreditCard" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.amiskiewicz.ecommerce.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.amiskiewicz.ecommerce" />
+      <option name="MAIN_CLASS_NAME" value="pl.amiskiewicz.ecommerce.AppTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppTest.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CreditCard" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.amiskiewicz.ecommerce.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.amiskiewicz.ecommerce" />
+      <option name="MAIN_CLASS_NAME" value="pl.amiskiewicz.ecommerce.AppTest" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CreditCardTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CreditCard" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pl.amiskiewicz.creditcard.*" />
+          <option name="PATTERN" value="pl.amiskiewicz.ecommerce.catalog.kk.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -90,59 +153,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CreditCardTest.isAllowsAssignCreditCardLimit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CreditCard" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.amiskiewicz.creditcard.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pl.amiskiewicz.creditcard" />
-      <option name="MAIN_CLASS_NAME" value="pl.amiskiewicz.creditcard.CreditCardTest" />
-      <option name="METHOD_NAME" value="isAllowsAssignCreditCardLimit" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CreditCardTest.itAllowsWithdrawMoney" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CreditCard" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.amiskiewicz.creditcard.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pl.amiskiewicz.creditcard" />
-      <option name="MAIN_CLASS_NAME" value="pl.amiskiewicz.creditcard.CreditCardTest" />
-      <option name="METHOD_NAME" value="itAllowsWithdrawMoney" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CreditCardTest.itDenyTransactionsOverTheBalance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CreditCard" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.amiskiewicz.creditcard.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pl.amiskiewicz.creditcard" />
-      <option name="MAIN_CLASS_NAME" value="pl.amiskiewicz.creditcard.CreditCardTest" />
-      <option name="METHOD_NAME" value="itDenyTransactionsOverTheBalance" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ProductCatalogTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CreditCard" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pl.amiskiewicz.ecommerce.catalog.*" />
+          <option name="PATTERN" value="pl.amiskiewicz.ecommerce.catalog.kk.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -153,13 +168,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="App" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="CreditCard" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="pl.amiskiewicz.ecommerce.App" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.amiskiewicz.ecommerce.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.App" />
+        <item itemvalue="JUnit.AppTest.contextLoads" />
+        <item itemvalue="JUnit.AppTest" />
         <item itemvalue="JUnit.ProductCatalogTest" />
         <item itemvalue="JUnit.CreditCardTest" />
-        <item itemvalue="JUnit.CreditCardTest.isAllowsAssignCreditCardLimit" />
-        <item itemvalue="JUnit.CreditCardTest.itDenyTransactionsOverTheBalance" />
-        <item itemvalue="JUnit.CreditCardTest.itAllowsWithdrawMoney" />
       </list>
     </recent_temporary>
   </component>
@@ -184,6 +212,8 @@
       <workItem from="1710745580474" duration="5973000" />
       <workItem from="1711303267663" duration="138000" />
       <workItem from="1711303411244" duration="17000" />
+      <workItem from="1711303446725" duration="155000" />
+      <workItem from="1711351091150" duration="7102000" />
     </task>
     <servers />
   </component>
