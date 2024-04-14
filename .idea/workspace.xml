@@ -5,16 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e8b1273e-2907-4dd9-b109-b12261983fd6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/amiskiewicz/ecommerce/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/amiskiewicz/ecommerce/catalog/ProductCatalogController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/amiskiewicz/ecommerce/hello/HelloController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pl/amiskiewicz/ecommerce/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/amiskiewicz/ecommerce/catalog/ArrayListProductStorage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/amiskiewicz/ecommerce/catalog/HashMapProductStorage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/amiskiewicz/ecommerce/catalog/ProductStorage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pl/amiskiewicz/ecommerce/catalog/HashMapProductStorageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/amiskiewicz/ecommerce/catalog/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/amiskiewicz/ecommerce/catalog/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/amiskiewicz/ecommerce/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/amiskiewicz/ecommerce/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/amiskiewicz/ecommerce/catalog/ProductCatalog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/amiskiewicz/ecommerce/catalog/ProductCatalog.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pl/amiskiewicz/ecommerce/catalog/ProductCatalogTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/amiskiewicz/ecommerce/catalog/ProductCatalogTest.java" afterDir="false" />
     </list>
@@ -27,6 +23,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -38,7 +35,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
@@ -64,8 +61,12 @@
     "JUnit.CreditCardTest.itAllowsWithdrawMoney.executor": "Run",
     "JUnit.CreditCardTest.itCantReassignCreditLimit.executor": "Run",
     "JUnit.CreditCardTest.itDenyTransactionsOverTheBalance.executor": "Run",
+    "JUnit.HashMapProductStorageTest.executor": "Run",
+    "JUnit.HashMapProductStorageTest.itAllowsToLoadAllProduct.executor": "Run",
     "JUnit.HelloTest.executor": "Run",
     "JUnit.ProductCatalogTest.executor": "Run",
+    "JUnit.ProductCatalogTest.itAllowsListingProducts.executor": "Run",
+    "JUnit.ProductCatalogTest.itLoadsSingleProductById.executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -101,54 +102,42 @@
       <recent name="$PROJECT_DIR$/src/main/resources/static/js" />
       <recent name="$PROJECT_DIR$/src/main/resources/static/css" />
     </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="pl.amiskiewicz.ecommerce.catalog" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="pl.amiskiewicz.ecommerce.catalog" />
       <recent name="pl.amiskiewicz.creditcard" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.App">
-    <configuration name="AppTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ProductCatalogTest">
+    <configuration name="HashMapProductStorageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CreditCard" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pl.amiskiewicz.ecommerce.*" />
+          <option name="PATTERN" value="pl.amiskiewicz.ecommerce.catalog.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="pl.amiskiewicz.ecommerce" />
-      <option name="MAIN_CLASS_NAME" value="pl.amiskiewicz.ecommerce.AppTest" />
+      <option name="PACKAGE_NAME" value="pl.amiskiewicz.ecommerce.catalog" />
+      <option name="MAIN_CLASS_NAME" value="pl.amiskiewicz.ecommerce.catalog.HashMapProductStorageTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AppTest.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HashMapProductStorageTest.itAllowsToLoadAllProduct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CreditCard" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pl.amiskiewicz.ecommerce.*" />
+          <option name="PATTERN" value="pl.amiskiewicz.ecommerce.catalog.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="pl.amiskiewicz.ecommerce" />
-      <option name="MAIN_CLASS_NAME" value="pl.amiskiewicz.ecommerce.AppTest" />
-      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="PACKAGE_NAME" value="pl.amiskiewicz.ecommerce.catalog" />
+      <option name="MAIN_CLASS_NAME" value="pl.amiskiewicz.ecommerce.catalog.HashMapProductStorageTest" />
+      <option name="METHOD_NAME" value="itAllowsToLoadAllProduct" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CreditCardTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CreditCard" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.amiskiewicz.ecommerce.catalog.kk.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pl.amiskiewicz.creditcard" />
-      <option name="MAIN_CLASS_NAME" value="pl.amiskiewicz.creditcard.CreditCardTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -168,26 +157,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="App" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="ProductCatalogTest.itAllowsListingProducts" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CreditCard" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="pl.amiskiewicz.ecommerce.App" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pl.amiskiewicz.ecommerce.*" />
+          <option name="PATTERN" value="pl.amiskiewicz.ecommerce.catalog.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="pl.amiskiewicz.ecommerce.catalog" />
+      <option name="MAIN_CLASS_NAME" value="pl.amiskiewicz.ecommerce.catalog.ProductCatalogTest" />
+      <option name="METHOD_NAME" value="itAllowsListingProducts" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductCatalogTest.itLoadsSingleProductById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CreditCard" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.amiskiewicz.ecommerce.catalog.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.amiskiewicz.ecommerce.catalog" />
+      <option name="MAIN_CLASS_NAME" value="pl.amiskiewicz.ecommerce.catalog.ProductCatalogTest" />
+      <option name="METHOD_NAME" value="itLoadsSingleProductById" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.App" />
-        <item itemvalue="JUnit.AppTest.contextLoads" />
-        <item itemvalue="JUnit.AppTest" />
         <item itemvalue="JUnit.ProductCatalogTest" />
-        <item itemvalue="JUnit.CreditCardTest" />
+        <item itemvalue="JUnit.HashMapProductStorageTest" />
+        <item itemvalue="JUnit.HashMapProductStorageTest.itAllowsToLoadAllProduct" />
+        <item itemvalue="JUnit.ProductCatalogTest.itAllowsListingProducts" />
+        <item itemvalue="JUnit.ProductCatalogTest.itLoadsSingleProductById" />
       </list>
     </recent_temporary>
   </component>
@@ -213,7 +221,8 @@
       <workItem from="1711303267663" duration="138000" />
       <workItem from="1711303411244" duration="17000" />
       <workItem from="1711303446725" duration="155000" />
-      <workItem from="1711351091150" duration="7102000" />
+      <workItem from="1711351091150" duration="7877000" />
+      <workItem from="1712555319758" duration="7909000" />
     </task>
     <servers />
   </component>

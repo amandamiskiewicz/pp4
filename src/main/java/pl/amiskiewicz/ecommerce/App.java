@@ -17,6 +17,7 @@ public class App {
     ProductCatalog createMyProductCatalog() {
         ProductCatalog productCatalog = new ProductCatalog();
         productCatalog.addProduct("Legoset 9231", "Nice One");
+        productCatalog.addProduct("Cobi 1802", "Nice One");
 
         return productCatalog;
     }
