@@ -5,14 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e8b1273e-2907-4dd9-b109-b12261983fd6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/amiskiewicz/ecommerce/catalog/ArrayListProductStorage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/amiskiewicz/ecommerce/catalog/HashMapProductStorage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/amiskiewicz/ecommerce/catalog/ProductStorage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pl/amiskiewicz/ecommerce/catalog/HashMapProductStorageTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pl/amiskiewicz/ecommerce/playground/JdbcPlaygroundTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/amiskiewicz/ecommerce/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/amiskiewicz/ecommerce/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/amiskiewicz/ecommerce/catalog/ProductCatalog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/amiskiewicz/ecommerce/catalog/ProductCatalog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pl/amiskiewicz/ecommerce/catalog/ProductCatalogTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/amiskiewicz/ecommerce/catalog/ProductCatalogTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,8 +61,14 @@
     "JUnit.HashMapProductStorageTest.executor": "Run",
     "JUnit.HashMapProductStorageTest.itAllowsToLoadAllProduct.executor": "Run",
     "JUnit.HelloTest.executor": "Run",
+    "JUnit.JdbcPlaygroundTest.executor": "Run",
+    "JUnit.JdbcPlaygroundTest.itAllowsToInsertDynamicElement.executor": "Run",
+    "JUnit.JdbcPlaygroundTest.itAllowsToInsertElements.executor": "Run",
+    "JUnit.JdbcPlaygroundTest.itCountsProductsWhenNoProducts.executor": "Run",
+    "JUnit.JdbcPlaygroundTest.itCreatesTable.executor": "Run",
     "JUnit.ProductCatalogTest.executor": "Run",
     "JUnit.ProductCatalogTest.itAllowsListingProducts.executor": "Run",
+    "JUnit.ProductCatalogTest.itAllowsToChangePrice.executor": "Run",
     "JUnit.ProductCatalogTest.itLoadsSingleProductById.executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
@@ -110,80 +113,81 @@
       <recent name="pl.amiskiewicz.creditcard" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ProductCatalogTest">
-    <configuration name="HashMapProductStorageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.JdbcPlaygroundTest">
+    <configuration name="JdbcPlaygroundTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CreditCard" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pl.amiskiewicz.ecommerce.catalog.*" />
+          <option name="PATTERN" value="pl.amiskiewicz.ecommerce.playground.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="pl.amiskiewicz.ecommerce.catalog" />
-      <option name="MAIN_CLASS_NAME" value="pl.amiskiewicz.ecommerce.catalog.HashMapProductStorageTest" />
+      <option name="PACKAGE_NAME" value="pl.amiskiewicz.ecommerce.playground" />
+      <option name="MAIN_CLASS_NAME" value="pl.amiskiewicz.ecommerce.playground.JdbcPlaygroundTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HashMapProductStorageTest.itAllowsToLoadAllProduct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="JdbcPlaygroundTest.itAllowsToInsertDynamicElement" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CreditCard" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pl.amiskiewicz.ecommerce.catalog.*" />
+          <option name="PATTERN" value="pl.amiskiewicz.ecommerce.playground.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="pl.amiskiewicz.ecommerce.catalog" />
-      <option name="MAIN_CLASS_NAME" value="pl.amiskiewicz.ecommerce.catalog.HashMapProductStorageTest" />
-      <option name="METHOD_NAME" value="itAllowsToLoadAllProduct" />
+      <option name="PACKAGE_NAME" value="pl.amiskiewicz.ecommerce.playground" />
+      <option name="MAIN_CLASS_NAME" value="pl.amiskiewicz.ecommerce.playground.JdbcPlaygroundTest" />
+      <option name="METHOD_NAME" value="itAllowsToInsertDynamicElement" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductCatalogTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="JdbcPlaygroundTest.itAllowsToInsertElements" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CreditCard" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pl.amiskiewicz.ecommerce.catalog.kk.*" />
+          <option name="PATTERN" value="pl.amiskiewicz.ecommerce.playground.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="pl.amiskiewicz.ecommerce.catalog" />
-      <option name="MAIN_CLASS_NAME" value="pl.amiskiewicz.ecommerce.catalog.ProductCatalogTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProductCatalogTest.itAllowsListingProducts" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CreditCard" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.amiskiewicz.ecommerce.catalog.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pl.amiskiewicz.ecommerce.catalog" />
-      <option name="MAIN_CLASS_NAME" value="pl.amiskiewicz.ecommerce.catalog.ProductCatalogTest" />
-      <option name="METHOD_NAME" value="itAllowsListingProducts" />
+      <option name="PACKAGE_NAME" value="pl.amiskiewicz.ecommerce.playground" />
+      <option name="MAIN_CLASS_NAME" value="pl.amiskiewicz.ecommerce.playground.JdbcPlaygroundTest" />
+      <option name="METHOD_NAME" value="itAllowsToInsertElements" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductCatalogTest.itLoadsSingleProductById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="JdbcPlaygroundTest.itCountsProductsWhenNoProducts" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CreditCard" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pl.amiskiewicz.ecommerce.catalog.*" />
+          <option name="PATTERN" value="pl.amiskiewicz.ecommerce.playground.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="pl.amiskiewicz.ecommerce.catalog" />
-      <option name="MAIN_CLASS_NAME" value="pl.amiskiewicz.ecommerce.catalog.ProductCatalogTest" />
-      <option name="METHOD_NAME" value="itLoadsSingleProductById" />
+      <option name="PACKAGE_NAME" value="pl.amiskiewicz.ecommerce.playground" />
+      <option name="MAIN_CLASS_NAME" value="pl.amiskiewicz.ecommerce.playground.JdbcPlaygroundTest" />
+      <option name="METHOD_NAME" value="itCountsProductsWhenNoProducts" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JdbcPlaygroundTest.itCreatesTable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CreditCard" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.amiskiewicz.ecommerce.playground.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.amiskiewicz.ecommerce.playground" />
+      <option name="MAIN_CLASS_NAME" value="pl.amiskiewicz.ecommerce.playground.JdbcPlaygroundTest" />
+      <option name="METHOD_NAME" value="itCreatesTable" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -191,11 +195,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ProductCatalogTest" />
-        <item itemvalue="JUnit.HashMapProductStorageTest" />
-        <item itemvalue="JUnit.HashMapProductStorageTest.itAllowsToLoadAllProduct" />
-        <item itemvalue="JUnit.ProductCatalogTest.itAllowsListingProducts" />
-        <item itemvalue="JUnit.ProductCatalogTest.itLoadsSingleProductById" />
+        <item itemvalue="JUnit.JdbcPlaygroundTest" />
+        <item itemvalue="JUnit.JdbcPlaygroundTest.itAllowsToInsertDynamicElement" />
+        <item itemvalue="JUnit.JdbcPlaygroundTest.itAllowsToInsertElements" />
+        <item itemvalue="JUnit.JdbcPlaygroundTest.itCountsProductsWhenNoProducts" />
+        <item itemvalue="JUnit.JdbcPlaygroundTest.itCreatesTable" />
       </list>
     </recent_temporary>
   </component>
@@ -222,7 +226,7 @@
       <workItem from="1711303411244" duration="17000" />
       <workItem from="1711303446725" duration="155000" />
       <workItem from="1711351091150" duration="7877000" />
-      <workItem from="1712555319758" duration="7909000" />
+      <workItem from="1712555319758" duration="18401000" />
     </task>
     <servers />
   </component>
