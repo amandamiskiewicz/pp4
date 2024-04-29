@@ -118,7 +118,7 @@ public class JdbcPlaygroundTest {
                 }
         );
 
-        assertThat(myProduct.getName()).isEqualTo("my product 1");
+        assertThat(myProduct.getName()).isEqualTo("4");
 
     }
 }

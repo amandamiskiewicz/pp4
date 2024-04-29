@@ -3,6 +3,7 @@ package pl.amiskiewicz.ecommerce;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import pl.amiskiewicz.ecommerce.catalog.ArrayListProductStorage;
 import pl.amiskiewicz.ecommerce.catalog.ProductCatalog;
 
 @SpringBootApplication
@@ -15,9 +16,10 @@ public class App {
 
     @Bean
     ProductCatalog createMyProductCatalog() {
-        ProductCatalog productCatalog = new ProductCatalog();
-        productCatalog.addProduct("Legoset 9231", "Nice One");
-        productCatalog.addProduct("Cobi 1802", "Nice One");
+        ProductCatalog productCatalog = new ProductCatalog(new ArrayListProductStorage());
+        productCatalog.addProduct("Lego set 1", "nice one");
+        productCatalog.addProduct("Lego set 2", "nice one");
+        productCatalog.addProduct("Lego set 3", "nice one");
 
         return productCatalog;
     }

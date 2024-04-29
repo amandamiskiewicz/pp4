@@ -1,19 +1,17 @@
 package pl.amiskiewicz.ecommerce.catalog;
 
-import pl.amiskiewicz.ecommerce.catalog.Product;
-
 import java.math.BigDecimal;
 import java.util.*;
 
 public class ProductCatalog {
-    ArrayListProductStorage arrayListProductStorage;
+    ProductStorage productStorage;
 
-    public ProductCatalog() {
-        this.arrayListProductStorage = new ArrayListProductStorage();
+    public ProductCatalog(ProductStorage productStorage) {
+        this.productStorage = productStorage;
     }
 
     public List<Product> allProducts() {
-        return arrayListProductStorage.allProducts();
+        return productStorage.allProducts();
     }
 
     public String addProduct(String name, String description) {
@@ -21,13 +19,13 @@ public class ProductCatalog {
 
         Product newProduct = new Product(id, name, description);
 
-        arrayListProductStorage.add(newProduct);
+        productStorage.addProduct(newProduct);
 
         return id.toString();
     }
 
     public Product getProductBy(String id) {
-        return arrayListProductStorage.getProductBy(id);
+        return productStorage.getProductBy(id);
     }
 
     public void changePrice(String id, BigDecimal price) {

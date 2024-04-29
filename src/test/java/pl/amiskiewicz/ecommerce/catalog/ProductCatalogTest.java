@@ -2,8 +2,6 @@ package pl.amiskiewicz.ecommerce.catalog;
 
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
-import pl.amiskiewicz.ecommerce.catalog.Product;
-import pl.amiskiewicz.ecommerce.catalog.ProductCatalog;
 
 import static org.assertj.core.api.Assertions.*;
 
@@ -13,7 +11,7 @@ import java.util.List;
 public class ProductCatalogTest {
 
     private ProductCatalog thereIsProductCatalog() {
-        return new ProductCatalog();
+        return new ProductCatalog(new ArrayListProductStorage());
     }
 
     @Test
