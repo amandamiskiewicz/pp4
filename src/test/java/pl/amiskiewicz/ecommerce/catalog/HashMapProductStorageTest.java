@@ -16,7 +16,7 @@ public class HashMapProductStorageTest {
 
         ProductStorage hasMapStorage = thereIsExampleHashMapStorage();
 
-        hasMapStorage.add(product);
+        hasMapStorage.addProduct(product);
 
         List<Product> products = hasMapStorage.allProducts();
         assertThat(products)

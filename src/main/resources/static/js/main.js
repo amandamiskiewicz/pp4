@@ -1,9 +1,14 @@
-getProducts = () => {
+const getProducts = () => {
     return fetch("/api/products")
         .then(response => response.json());
 }
 
-createProductHtmlEl = (productData) => {
+const getCurrentOffer = () => {
+    return fetch("/api/current-offer")
+        .then(response => response.json());
+}
+
+const createProductHtmlEl = (productData) => {
     const template = `
         <div>
             <img src="https://www.pastelowelove.pl/userdata/public/gfx/5582/kotek-mruczek--naklejka.-naklejka-dla-dzieci.-dekoracje-pokoju.jpg" width="200" height="200">
