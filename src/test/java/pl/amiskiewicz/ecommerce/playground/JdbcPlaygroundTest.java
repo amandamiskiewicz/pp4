@@ -82,7 +82,7 @@ public class JdbcPlaygroundTest {
         var insertSql = "INSERT INTO `product_catalog__products` (id, name, price) " +
                 "VALUES " +
                 "(?,?,?)";
-        var product = new Product(UUID.randomUUID(), "my product", "nice one");
+        var product = new Product(UUID.randomUUID(), "my product", "nice one",BigDecimal.valueOf(10));
         product.changePrice(BigDecimal.TEN);
 
         jdbcTemplate.update(insertSql,product.getId(),product.getName(), product.getPrice());
@@ -109,10 +109,7 @@ public class JdbcPlaygroundTest {
                 new Object[]{"product_1"},
                 (rs, i) -> {
                     var myResult = new Product(
-                            UUID.randomUUID(),
-                            rs.getString("name"),
-                            rs.getString("name")
-                            );
+                    );
                     myResult.changePrice(BigDecimal.valueOf(rs.getDouble("price")));
                     return myResult;
                 }

@@ -1,48 +1,50 @@
 package pl.amiskiewicz.ecommerce.catalog;
 
 import org.junit.jupiter.api.Test;
+import static org.assertj.core.api.Assertions.*;
 
-import java.util.HashMap;
+import java.math.BigDecimal;
 import java.util.List;
 import java.util.UUID;
 
-import static org.assertj.core.api.Assertions.*;
-
 public class HashMapProductStorageTest {
 
+    public static final String EXAMPLE_PRODUCT_NAME = "example product";
+
     @Test
-    void itAllowToStoreProduct() {
-        Product product = thereIsExampleProduct();
+    void itStoresAndLoadProduct() {
+        var product = thereIsExampleProduct();
+        var productStorage = thereIsProductStorage();
 
-        ProductStorage hasMapStorage = thereIsExampleHashMapStorage();
+        productStorage.addProduct(product);
 
-        hasMapStorage.addProduct(product);
+        List<Product> products = productStorage.allProducts();
 
-        List<Product> products = hasMapStorage.allProducts();
         assertThat(products)
                 .hasSize(1)
                 .extracting(Product::getName)
-                .contains("test-it");
-
-
-
+                .contains(EXAMPLE_PRODUCT_NAME);
     }
 
-    private ProductStorage thereIsExampleHashMapStorage() {
+    @Test
+    void itStoresAndLoadById() {
+        var product = thereIsExampleProduct();
+        var productStorage = thereIsProductStorage();
+
+        productStorage.addProduct(product);
+        var loaded = productStorage.getProductBy(product.getId());
+
+        assertThat(loaded.getId()).isEqualTo(product.getId());
+    }
+
+    private HashMapProductStorage thereIsProductStorage() {
         return new HashMapProductStorage();
     }
 
     private Product thereIsExampleProduct() {
-        return new Product(UUID.randomUUID(), "test-it", "test");
-    }
+        var product = new Product(UUID.randomUUID(), EXAMPLE_PRODUCT_NAME, "nice one",BigDecimal.valueOf(10.10));
+        product.changePrice(BigDecimal.valueOf(10.10));
 
-    @Test
-    void itAllowsToLoadAllProduct() {
-
-    }
-
-    @Test
-    void itAllowsToLoadProductById() {
-
+        return product;
     }
 }

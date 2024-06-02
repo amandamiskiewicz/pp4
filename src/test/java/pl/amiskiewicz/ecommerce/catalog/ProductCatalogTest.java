@@ -10,41 +10,50 @@ import java.util.List;
 
 public class ProductCatalogTest {
 
-    private ProductCatalog thereIsProductCatalog() {
-        return new ProductCatalog(new ArrayListProductStorage());
-    }
-
     @Test
-    void itAllowsListingProducts(){
+    void itListAvailableProducts() {
         ProductCatalog catalog = thereIsProductCatalog();
+
         List<Product> products = catalog.allProducts();
 
         assert products.isEmpty();
     }
 
+
+
     @Test
-    void itAllowsToAddProduct(){
+    void itAllowsToAddProduct() {
         ProductCatalog catalog = thereIsProductCatalog();
-        catalog.addProduct("Legoset 8083", "nice one");
-        List<Product> allProducts = catalog.allProducts();
-        Assertions.assertThat(allProducts).hasSize(1);
+
+        catalog.addProduct("Lego set 8083", "Nice one",BigDecimal.valueOf(30));
+        List<Product> products = catalog.allProducts();
+
+        assertThat(products)
+                .hasSize(1);
     }
 
     @Test
-    void itLoadsSingleProductById(){
+    void itLoadsSingleProductById() {
         ProductCatalog catalog = thereIsProductCatalog();
-        String id = catalog.addProduct("Legoset 8083", "nice one");
+        String id = catalog.addProduct("Lego set 8083", "Nice one",BigDecimal.valueOf(20));
+
         Product loaded = catalog.getProductBy(id);
-        assertThat(loaded.getId()).isEqualTo(id);
+
+        assertThat(id).isEqualTo(loaded.getId());
     }
 
     @Test
-    void itAllowsToChangePrice(){
+    void itAllowsChangePrice() {
         ProductCatalog catalog = thereIsProductCatalog();
-        String id = catalog.addProduct("Legoset 8083", "nice one");
+        String id = catalog.addProduct("Lego set 8083", "Nice one",BigDecimal.valueOf(10));
 
         catalog.changePrice(id, BigDecimal.valueOf(10.10));
         Product loaded = catalog.getProductBy(id);
-        assertThat(loaded.getPrice()).isEqualTo(BigDecimal.valueOf(10.10));
+
+        assertThat(BigDecimal.valueOf(10.10)).isEqualTo(loaded.getPrice());
+    }
+
+    private static ProductCatalog thereIsProductCatalog() {
+        return new ProductCatalog(new HashMapProductStorage());
     }
 }
