@@ -1,9 +1,23 @@
 package pl.amiskiewicz.ecommerce.sales.cart;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Optional;
 
 public class HashMapCartStorage {
-    public Optional<Cart> getForCustomer(String customerId) {
-        return Optional.empty();
+    Map<String, Cart> carts;
+
+    public HashMapCartStorage() {
+        this.carts = new HashMap<>();
     }
+    public Optional<Cart> getForCustomer(String customerId) {
+        return Optional.of(carts.get(customerId));
+    }
+    public Optional<Cart> loadForCustomer(String customerId) {
+        return Optional.ofNullable(carts.get(customerId));
+    }
+    public void save(String customerId, Cart cart) {
+        carts.put(customerId, cart);
+    }
+
 }

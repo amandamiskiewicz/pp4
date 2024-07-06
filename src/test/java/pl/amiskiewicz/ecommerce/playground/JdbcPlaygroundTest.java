@@ -94,28 +94,29 @@ public class JdbcPlaygroundTest {
     }
 
     @Test
-    void selectForProducts(){
-        var insertSql = "INSERT INTO `product_catalog__products` (id, name, price) " +
+    void selectForProducts() {
+        var insert = "INSERT INTO `product_catalog__products` (id, name, price) " +
                 "VALUES " +
-                "('product_1', 'my product 1', 20.25)," +
-                "('product_2', 'my product 2', 13.30)" +
-                ";";
-        jdbcTemplate.execute(insertSql);
+                "('product_1', 'my product 1', 20.25), " +
+                "('product_2', 'my product 2', 30.25);";
+        jdbcTemplate.execute(insert);
 
-        var selectSql = "SELECT * from `product_catalog__products` where id = ?";
+        var selectSQL = "SELECT * FROM `product_catalog__products` WHERE id = ?";
 
         Product myProduct = jdbcTemplate.queryForObject(
-                selectSql,
+                selectSQL,
                 new Object[]{"product_1"},
                 (rs, i) -> {
                     var myResult = new Product(
+                            UUID.randomUUID(),
+                            rs.getString("name"),
+                            rs.getString("name"),
+                            rs.getBigDecimal("price")
                     );
                     myResult.changePrice(BigDecimal.valueOf(rs.getDouble("price")));
                     return myResult;
-                }
-        );
-
-        assertThat(myProduct.getName()).isEqualTo("4");
-
+                });
+        assertThat(myProduct.getName()).isEqualTo("my product 1");
     }
+
 }

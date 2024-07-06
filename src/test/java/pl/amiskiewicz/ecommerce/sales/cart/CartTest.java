@@ -7,8 +7,8 @@ import pl.amiskiewicz.ecommerce.sales.cart.CartItem;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class CartTest {
-    public static final String PRODUCT_1 = "lego-8297";
-    public static final String PRODUCT_2 = "lego-8298";
+    public static final String PRODUCT_1 = "lego";
+    public static final String PRODUCT_2 = "lego1";
 
     @Test
     public void newlyCreateCartIsEmpty() {

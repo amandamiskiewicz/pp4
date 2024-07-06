@@ -5,9 +5,14 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import pl.amiskiewicz.ecommerce.catalog.ArrayListProductStorage;
 import pl.amiskiewicz.ecommerce.catalog.ProductCatalog;
+import pl.amiskiewicz.ecommerce.sales.cart.HashMapCartStorage;
+import pl.amiskiewicz.ecommerce.sales.offering.OfferCalculator;
 import pl.amiskiewicz.ecommerce.sales.SalesFacade;
+import pl.amiskiewicz.ecommerce.sales.payment.PayUPayment;
+import pl.amiskiewicz.ecommerce.sales.reservation.ReservationRepository;
 
 import java.math.BigDecimal;
+
 
 @SpringBootApplication
 public class App {
@@ -20,15 +25,20 @@ public class App {
     @Bean
     ProductCatalog createMyProductCatalog() {
         ProductCatalog productCatalog = new ProductCatalog(new ArrayListProductStorage());
-        productCatalog.addProduct("kicia 1", "nice one", BigDecimal.valueOf(10));
-        productCatalog.addProduct("kicia 2", "nice one", BigDecimal.valueOf(20));
-        productCatalog.addProduct("kicia 3", "nice one", BigDecimal.valueOf(30));
+        productCatalog.addProduct("kotek 1", "nice one", BigDecimal.valueOf(10));
+        productCatalog.addProduct("kotek 2", "nice one", BigDecimal.valueOf(20));
+        productCatalog.addProduct("kotek 3", "nice one", BigDecimal.valueOf(30));
 
         return productCatalog;
     }
 
     @Bean
-    SalesFacade createMySalesFacade(){
-        return new SalesFacade();
+    SalesFacade createSalesFacade() {
+        return new SalesFacade(
+                new HashMapCartStorage(),
+                new OfferCalculator(),
+                new PayUPayment(),
+                new ReservationRepository()
+        );
     }
 }

@@ -1,4 +1,4 @@
-package pl.amiskiewicz.creditcard;
+package pl.amiskiewicz.hello;
 
 import org.junit.jupiter.api.Test;
 public class HelloTest {

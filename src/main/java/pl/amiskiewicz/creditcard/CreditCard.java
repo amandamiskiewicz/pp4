@@ -35,4 +35,5 @@ public class CreditCard {
     private boolean isBelowBalance(BigDecimal money) {
         return balance.subtract(money).compareTo(BigDecimal.valueOf(0)) < 0;
     }
+
 }

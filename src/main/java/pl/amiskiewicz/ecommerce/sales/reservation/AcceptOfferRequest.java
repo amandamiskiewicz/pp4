@@ -1,4 +1,4 @@
-package pl.amiskiewicz.ecommerce.sales;
+package pl.amiskiewicz.ecommerce.sales.reservation;
 
 public class AcceptOfferRequest {
     String firstName;
