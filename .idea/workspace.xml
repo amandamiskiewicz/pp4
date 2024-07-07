@@ -5,39 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e8b1273e-2907-4dd9-b109-b12261983fd6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/amiskiewicz/ecommerce/payu/AuthorizationResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/amiskiewicz/ecommerce/sales/offering/OfferCalculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/amiskiewicz/ecommerce/sales/payment/PayUPayment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/amiskiewicz/ecommerce/sales/payment/PaymentDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/amiskiewicz/ecommerce/sales/payment/PaymentGateway.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/amiskiewicz/ecommerce/sales/payment/RegisterPaymentRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/amiskiewicz/ecommerce/sales/reservation/CustomerDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/amiskiewicz/ecommerce/sales/reservation/Reservation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/amiskiewicz/ecommerce/sales/reservation/ReservationRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pl/amiskiewicz/creditcard/NumberRepresentationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/amiskiewicz/creditcard/CreditCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/amiskiewicz/creditcard/CreditCard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/amiskiewicz/ecommerce/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/amiskiewicz/ecommerce/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/amiskiewicz/ecommerce/catalog/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/amiskiewicz/ecommerce/catalog/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/amiskiewicz/ecommerce/catalog/ProductCatalog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/amiskiewicz/ecommerce/catalog/ProductCatalog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/amiskiewicz/ecommerce/payu/AccessTokenResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/amiskiewicz/ecommerce/payu/OrderCreateResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/amiskiewicz/ecommerce/payu/OrderCreateResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/amiskiewicz/ecommerce/payu/PayU.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/amiskiewicz/ecommerce/payu/PayU.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/amiskiewicz/ecommerce/payu/PayUCredentials.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/amiskiewicz/ecommerce/payu/PayUCredentials.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/amiskiewicz/ecommerce/sales/AcceptOfferRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/amiskiewicz/ecommerce/sales/reservation/AcceptOfferRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/amiskiewicz/ecommerce/sales/Offer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/amiskiewicz/ecommerce/sales/offering/Offer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/amiskiewicz/ecommerce/sales/ReservationDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/amiskiewicz/ecommerce/sales/reservation/ReservationDetails.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/amiskiewicz/ecommerce/sales/SalesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/amiskiewicz/ecommerce/sales/SalesController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/amiskiewicz/ecommerce/sales/SalesFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/amiskiewicz/ecommerce/sales/SalesFacade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/amiskiewicz/ecommerce/sales/cart/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/amiskiewicz/ecommerce/sales/cart/Cart.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/amiskiewicz/ecommerce/sales/cart/HashMapCartStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/amiskiewicz/ecommerce/sales/cart/HashMapCartStorage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pl/amiskiewicz/creditcard/HelloTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/amiskiewicz/hello/HelloTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pl/amiskiewicz/ecommerce/payu/PayuTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/amiskiewicz/ecommerce/payu/PayUTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pl/amiskiewicz/ecommerce/playground/JdbcPlaygroundTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/amiskiewicz/ecommerce/playground/JdbcPlaygroundTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pl/amiskiewicz/ecommerce/sales/SalesHTTPTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/amiskiewicz/ecommerce/sales/offering/Offer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/amiskiewicz/ecommerce/sales/offering/Offer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/amiskiewicz/ecommerce/sales/offering/OfferCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/amiskiewicz/ecommerce/sales/offering/OfferCalculator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pl/amiskiewicz/ecommerce/sales/SalesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/amiskiewicz/ecommerce/sales/SalesTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pl/amiskiewicz/ecommerce/sales/cart/CartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/amiskiewicz/ecommerce/sales/cart/CartTest.java" afterDir="false" />
     </list>
@@ -73,80 +48,81 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;JUnit.AppTest.contextLoads.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AppTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AssertjTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AssertjTest.testSomeListExpression.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CartTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CreditCardTest (1).executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CreditCardTest.cantReassignCreditLimits.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CreditCardTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CreditCardTest.isAllowsAssignCreditCardLimit.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CreditCardTest.isDenyCreditCardLimitBelowThresholdV2.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CreditCardTest.isDenyCreditLimitBelowThreshold.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CreditCardTest.isDenyCreditLimitBelowThresholdV2.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CreditCardTest.itAllowsWithdrawMoney.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CreditCardTest.itCantReassignCreditLimit.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CreditCardTest.itDenyTransactionsOverTheBalance.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.HashMapProductStorageTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.HashMapProductStorageTest.itAllowsToLoadAllProduct.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.HelloTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.HomepageHttpTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.HttpProductCatalogTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.HttpProductCatalogTest.homepageLoads.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.HttpProductCatalogTest.loadsProducts.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.JdbcPlaygroundTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.JdbcPlaygroundTest.itAllowsToInsertDynamicElement.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.JdbcPlaygroundTest.itAllowsToInsertElements.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.JdbcPlaygroundTest.itCountsProductsWhenNoProducts.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.JdbcPlaygroundTest.itCreatesTable.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.JdbcPlaygroundTest.selectForProducts.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.NumberRepresentationTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.OfferCalculatorTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PayUTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PayuTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ProductCatalogTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ProductCatalogTest.itAllowsListingProducts.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ProductCatalogTest.itAllowsToChangePrice.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ProductCatalogTest.itLoadsSingleProductById.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SalesHTTPTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SalesHTTPTest.itAllowToAcceptOffer.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.SalesHttpTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SalesTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SalesTest.itAddMultipleProductsToCart.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SalesTest.itAddProductToCart.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SalesTest.itDoesNotShareCustomersCarts.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SalesTest.itShowsCurrentOffer.executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.App.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_directory_selection&quot;: &quot;/Users/amanda/Desktop/pp4/src/main/java/pl/amiskiewicz/ecommerce&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/amanda/Desktop/CreditCard&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/amanda/Desktop/CreditCard/src/main/java/pl/amiskiewicz/creditcard/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.build.tools.auto.reload&quot;: &quot;ALL&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JUnit.AppTest.contextLoads.executor": "Run",
+    "JUnit.AppTest.executor": "Run",
+    "JUnit.AssertjTest.executor": "Run",
+    "JUnit.AssertjTest.testSomeListExpression.executor": "Run",
+    "JUnit.CartTest.executor": "Run",
+    "JUnit.CreditCardTest (1).executor": "Run",
+    "JUnit.CreditCardTest.cantReassignCreditLimits.executor": "Run",
+    "JUnit.CreditCardTest.executor": "Run",
+    "JUnit.CreditCardTest.isAllowsAssignCreditCardLimit.executor": "Run",
+    "JUnit.CreditCardTest.isDenyCreditCardLimitBelowThresholdV2.executor": "Run",
+    "JUnit.CreditCardTest.isDenyCreditLimitBelowThreshold.executor": "Run",
+    "JUnit.CreditCardTest.isDenyCreditLimitBelowThresholdV2.executor": "Run",
+    "JUnit.CreditCardTest.itAllowsWithdrawMoney.executor": "Run",
+    "JUnit.CreditCardTest.itCantReassignCreditLimit.executor": "Run",
+    "JUnit.CreditCardTest.itDenyTransactionsOverTheBalance.executor": "Run",
+    "JUnit.HashMapProductStorageTest.executor": "Run",
+    "JUnit.HashMapProductStorageTest.itAllowsToLoadAllProduct.executor": "Run",
+    "JUnit.HelloTest.executor": "Run",
+    "JUnit.HomepageHttpTest.executor": "Run",
+    "JUnit.HttpProductCatalogTest.executor": "Run",
+    "JUnit.HttpProductCatalogTest.homepageLoads.executor": "Run",
+    "JUnit.HttpProductCatalogTest.loadsProducts.executor": "Run",
+    "JUnit.JdbcPlaygroundTest.executor": "Run",
+    "JUnit.JdbcPlaygroundTest.itAllowsToInsertDynamicElement.executor": "Run",
+    "JUnit.JdbcPlaygroundTest.itAllowsToInsertElements.executor": "Run",
+    "JUnit.JdbcPlaygroundTest.itCountsProductsWhenNoProducts.executor": "Run",
+    "JUnit.JdbcPlaygroundTest.itCreatesTable.executor": "Run",
+    "JUnit.JdbcPlaygroundTest.selectForProducts.executor": "Run",
+    "JUnit.NumberRepresentationTest.executor": "Run",
+    "JUnit.OfferCalculatorTest.executor": "Run",
+    "JUnit.PayUTest.executor": "Run",
+    "JUnit.PayuTest.executor": "Run",
+    "JUnit.ProductCatalogTest.executor": "Run",
+    "JUnit.ProductCatalogTest.itAllowsListingProducts.executor": "Run",
+    "JUnit.ProductCatalogTest.itAllowsToChangePrice.executor": "Run",
+    "JUnit.ProductCatalogTest.itLoadsSingleProductById.executor": "Run",
+    "JUnit.SalesHTTPTest.executor": "Run",
+    "JUnit.SalesHTTPTest.itAllowToAcceptOffer.executor": "Debug",
+    "JUnit.SalesHttpTest.executor": "Run",
+    "JUnit.SalesTest,itShowsCurrentOffer and 6 more.executor": "Run",
+    "JUnit.SalesTest.executor": "Run",
+    "JUnit.SalesTest.itAddMultipleProductsToCart.executor": "Run",
+    "JUnit.SalesTest.itAddProductToCart.executor": "Run",
+    "JUnit.SalesTest.itDoesNotShareCustomersCarts.executor": "Run",
+    "JUnit.SalesTest.itShowsCurrentOffer.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.App.executor": "Run",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "/Users/amanda/Desktop/pp4/src/main/java/pl/amiskiewicz/ecommerce",
+    "last_opened_file_path": "/Users/amanda/Desktop/CreditCard",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "/Users/amanda/Desktop/CreditCard/src/main/java/pl/amiskiewicz/creditcard/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.build.tools.auto.reload": "ALL",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="pl.amiskiewicz.ecommerce.payu" />
@@ -171,16 +147,16 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="CartTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HashMapProductStorageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CreditCard" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pl.amiskiewicz.ecommerce.sales.cart.*" />
+          <option name="PATTERN" value="pl.amiskiewicz.ecommerce.catalog.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="pl.amiskiewicz.ecommerce.sales.cart" />
-      <option name="MAIN_CLASS_NAME" value="pl.amiskiewicz.ecommerce.sales.cart.CartTest" />
+      <option name="PACKAGE_NAME" value="pl.amiskiewicz.ecommerce.catalog" />
+      <option name="MAIN_CLASS_NAME" value="pl.amiskiewicz.ecommerce.catalog.HashMapProductStorageTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -201,16 +177,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OfferCalculatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PayUTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CreditCard" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pl.amiskiewicz.ecommerce.sales.offering.*" />
+          <option name="PATTERN" value="pl.amiskiewicz.ecommerce.payu.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="pl.amiskiewicz.ecommerce.sales.offering" />
-      <option name="MAIN_CLASS_NAME" value="pl.amiskiewicz.ecommerce.sales.offering.OfferCalculatorTest" />
+      <option name="PACKAGE_NAME" value="pl.amiskiewicz.ecommerce.payu" />
+      <option name="MAIN_CLASS_NAME" value="pl.amiskiewicz.ecommerce.payu.PayUTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -231,29 +207,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SalesTest.itAddMultipleProductsToCart" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SalesTest,itShowsCurrentOffer and 6 more" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CreditCard" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.amiskiewicz.ecommerce.sales.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pl.amiskiewicz.ecommerce.sales" />
-      <option name="MAIN_CLASS_NAME" value="pl.amiskiewicz.ecommerce.sales.SalesTest" />
-      <option name="METHOD_NAME" value="itAddMultipleProductsToCart" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="pattern" />
+      <patterns>
+        <pattern testClass="pl.amiskiewicz.ecommerce.sales.SalesTest,itShowsCurrentOffer" />
+        <pattern testClass="pl.amiskiewicz.ecommerce.sales.SalesTest,itAddProductToCart" />
+        <pattern testClass="pl.amiskiewicz.ecommerce.sales.SalesTest,itAddMultipleProductsToCart" />
+        <pattern testClass="pl.amiskiewicz.ecommerce.sales.SalesTest,itDoesNotShareCustomersCarts" />
+        <pattern testClass="pl.amiskiewicz.ecommerce.sales.SalesTest,itAllowToAcceptOffer" />
+        <pattern testClass="pl.amiskiewicz.ecommerce.sales.SalesTest,itAllowToPayForReservation" />
+        <pattern testClass="pl.amiskiewicz.ecommerce.sales.SalesTest,itRemoveProductFromCart" />
+      </patterns>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.OfferCalculatorTest" />
         <item itemvalue="JUnit.SalesTest" />
-        <item itemvalue="JUnit.SalesTest.itAddMultipleProductsToCart" />
-        <item itemvalue="JUnit.CartTest" />
+        <item itemvalue="JUnit.HashMapProductStorageTest" />
+        <item itemvalue="JUnit.SalesTest,itShowsCurrentOffer and 6 more" />
         <item itemvalue="JUnit.JdbcPlaygroundTest" />
+        <item itemvalue="JUnit.PayUTest" />
       </list>
     </recent_temporary>
   </component>
@@ -290,6 +266,7 @@
       <workItem from="1720045116618" duration="5774000" />
       <workItem from="1720304342734" duration="66000" />
       <workItem from="1720304602743" duration="4033000" />
+      <workItem from="1720308757377" duration="3131000" />
     </task>
     <servers />
   </component>
@@ -306,5 +283,26 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/pl/amiskiewicz/ecommerce/sales/cart/CartTest.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/pl/amiskiewicz/ecommerce/catalog/HashMapProductStorageTest.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/pl/amiskiewicz/ecommerce/sales/SalesTest.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

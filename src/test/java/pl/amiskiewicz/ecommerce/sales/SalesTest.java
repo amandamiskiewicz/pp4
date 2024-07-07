@@ -26,7 +26,7 @@ public class SalesTest {
         var productId = thereIsProduct("Product A", BigDecimal.valueOf(10));
         SalesFacade sales = thereIsSalesFacade();
         //ACT
-        sales.addToCart(customerId,productId);
+        sales.addProduct(customerId,productId);
 
         //ASSERT
         Offer currentOffer = sales.getCurrentOffer(customerId);
@@ -42,8 +42,8 @@ public class SalesTest {
         var productB = thereIsProduct("Product B", BigDecimal.valueOf(20));
         SalesFacade sales = thereIsSalesFacade();
         //ACT
-        sales.addToCart(customerId, productA);
-        sales.addToCart(customerId, productB);
+        sales.addProduct(customerId, productA);
+        sales.addProduct(customerId, productB);
 
         //ASSERT
         Offer currentOffer = sales.getCurrentOffer(customerId);
@@ -62,8 +62,8 @@ public class SalesTest {
         var productB = thereIsProduct("Product B", BigDecimal.valueOf(20));
         SalesFacade sales = thereIsSalesFacade();
         //ACT
-        sales.addToCart(customerA,productA);
-        sales.addToCart(customerB,productB);
+        sales.addProduct(customerA,productA);
+        sales.addProduct(customerB,productB);
 
         //ASSERT
         Offer currentOfferA = sales.getCurrentOffer(customerA);

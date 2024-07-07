@@ -8,29 +8,28 @@ import pl.amiskiewicz.ecommerce.sales.reservation.ReservationDetails;
 
 @RestController
 public class SalesController {
+    SalesFacade salesFacade;
 
-    SalesFacade sales;
-
-    public SalesController(SalesFacade sales) {
-        this.sales = sales;
+    public SalesController(SalesFacade salesFacade) {
+        this.salesFacade = salesFacade;
     }
 
     @GetMapping("/api/current-offer")
     Offer getCurrentOffer() {
-        var customerId = getCurrentCustomerId();
-        return sales.getCurrentOffer(customerId);
+        String customerId = getCurrentCustomerId();
+        return salesFacade.getCurrentOffer(customerId);
     }
 
-    @PostMapping("/api/add-product/{productId}")
-    void addProduct(@PathVariable(name = "productId") String productId) {
-        var customerId = getCurrentCustomerId();
-        sales.addToCart(customerId, productId);
+    @PostMapping("/api/add-to-cart/{productId}")
+    void addToCart(@PathVariable(name = "productId") String productId) {
+        String customerId = getCurrentCustomerId();
+        salesFacade.addProduct(customerId, productId);
     }
 
     @PostMapping("/api/accept-offer")
-    ReservationDetails acceptOffer(@RequestBody AcceptOfferRequest acceptOfferRequest) {
-        var customerId = getCurrentCustomerId();
-        return sales.acceptOffer(customerId, acceptOfferRequest);
+    ReservationDetails acceptOffer(AcceptOfferRequest acceptOfferRequest) {
+        String customerId = getCurrentCustomerId();
+        return salesFacade.acceptOffer(customerId, acceptOfferRequest);
     }
 
     private String getCurrentCustomerId() {

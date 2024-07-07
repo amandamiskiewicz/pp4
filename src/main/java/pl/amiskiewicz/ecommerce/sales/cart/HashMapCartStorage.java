@@ -20,4 +20,7 @@ public class HashMapCartStorage {
         carts.put(customerId, cart);
     }
 
+    public Optional<Cart> findByCustomer(String customerId) {
+        return Optional.ofNullable(carts.get(customerId));
+    };
 }

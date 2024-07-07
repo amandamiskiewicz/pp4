@@ -10,10 +10,10 @@ import java.util.List;
 public class OfferCalculator {
 
     public Offer calculate(List<CartItem> lines) {
-        BigDecimal basePrice = BigDecimal.valueOf(300);
+        BigDecimal basePrice = BigDecimal.valueOf(20);
         BigDecimal totalPrice = basePrice.multiply(new BigDecimal(lines.size()));
-        BigDecimal threshold = BigDecimal.valueOf(500);
-        BigDecimal discount50 = BigDecimal.valueOf(50);
+        BigDecimal threshold = BigDecimal.valueOf(50);
+        BigDecimal discount50 = BigDecimal.valueOf(10);
 
         int productCount = lines.size();
         BigDecimal discount = BigDecimal.ZERO;

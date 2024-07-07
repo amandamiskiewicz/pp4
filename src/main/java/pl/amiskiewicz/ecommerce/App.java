@@ -33,12 +33,7 @@ public class App {
     }
 
     @Bean
-    SalesFacade createSalesFacade() {
-        return new SalesFacade(
-                new HashMapCartStorage(),
-                new OfferCalculator(),
-                new PayUPayment(),
-                new ReservationRepository()
-        );
+    SalesFacade createMySalesFacade(){
+        return new SalesFacade();
     }
 }

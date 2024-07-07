@@ -22,4 +22,5 @@ public class Offer {
         return itemsCount;
 
     }
+
 }
